@@ -1,0 +1,26 @@
+PicasaFetch
+
+Copyright (c) 2009 Miguel Ventura
+Dual licensed under the MIT and GPL licenses.
+
+. What .
+This project aims at embedding PicasaWeb galleries using client-side JavaScript.
+
+. How .
+Check example.html
+
+. History .
+This project started to aid my scout group website (www.agrupamento523.com).
+Letting people upload their photo galleries through picasa was way easier
+than any other process at the time. Doing the processing on client-side
+wasn't necessary since we could do it in the PHP backend, but why not do
+something more generic that could be used to embedd galleries onto blogs or
+someplace where people can only put their HTML, CSS and JavaScript code?..
+
+And so PicasaFetch was born.
+
+. Next steps .
+Refactor code to make it more generic. Let the lightbox stuff be
+configurable. Make the language stuff more organized. Turn the function into
+a jQuery plugin. Use jQuery.data instead of polluting the global namespace.
+Customizable integration with lazyload plugins. *Your suggestion here*.

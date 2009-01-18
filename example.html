@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>Small HTML sample for PicasaFetch</title>
+	<!-- jQuery is required -->
+	<script type="text/javascript" language="javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.0/jquery.min.js"></script>
+	<!-- load google API -->
+	<script type="text/javascript" language="javascript" src="http://www.google.com/jsapi"></script>
+	<!-- load picasafetch script -->
+	<script type="text/javascript" language="javascript" src="jquery.picasafetch.js"></script>
+
+<style type="text/css">
+body {
+	font-family: Verdana, Sans-serif;
+	font-size: x-small;
+}
+</style>
+</head>
+<body>
+<h1>PicasaFetch example</h1>
+Read the HTML source. The part you need to know is:
+<pre>picasawebGallery(<i>picasa user</i>, <i>gallery name</i>, <i>element id</i>);</pre>
+where:
+<dl>
+<dt>picasa user</dt><dd>is the name of the user the gallery belongs to</dd>
+<dt>gallery name</dt><dd>is the internal gallery name. You can see it in the URL when you open the gallery in Picasaweb website. The URL will contain something like <i>&lt;user&gt;/&lt;gallery name&gt;</i></dd>
+<dt>element id</dt><dd>element where the table will be created. The element's content will be totally replaced, so you can leave a link for the gallery there, just in case the gallery loading fails for some reason.</dd>
+</dl>
+<div id="targetdiv">
+This div will contain your gallery.
+</div>
+<script type="text/javascript" language="javascript">
+picasawebGallery('miguel.ventura', '20070422SJorge', '#targetdiv');
+</script>
+</body>
+</html>
